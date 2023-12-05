@@ -1,0 +1,639 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fundo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.menu {
+    position: fixed;
+    background-color: #EBD4C9;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.foto {
+    position: absolute;
+}
+
+.header {
+    position: fixed;
+    top: 3%;
+    left: 20%;
+    width: 100%;
+    padding: 25px 12.5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 36px;
+    color: #99796A;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #99796A;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.navbar a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+a {
+    color: #99796A;
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 60px;
+    margin-top: 80px;
+    float: right;
+}
+
+.navbar a:hover::after {
+    color: #99796A;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.log1n {
+    margin-left: 180%;
+
+
+}
+
+
+
+.pensamentos {
+    position: absolute;
+    top: 270px;
+    left: 1180px;
+}
+
+#item-select {
+    color: #694433;
+    text-decoration: underline;
+}
+
+.mantenha {
+    position: absolute;
+    top: 230px;
+    left: 250px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 100px;
+}
+
+.button {
+    display: none;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.button2 {
+    position: absolute;
+    top: 650px;
+    left: 250px;
+    padding: 15px 70px;
+    background-color: #E8C5B4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #99796A;
+    width: 400px;
+}
+
+.button2:hover {
+    -ms-transform: scale(1.3);
+    transform: scale(1.04);
+}
+
+.fundo2 {
+    position: absolute;
+    top: 850px;
+    left: 0px;
+}
+
+.fundo3 {
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+}
+
+.texto {
+    position: absolute;
+    top: 950px;
+    left: 25%;
+}
+
+.button3 {
+    position: absolute;
+    top: 1450px;
+    left: 770px;
+    padding: 15px 70px;
+    background-color: #E8C5B4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #99796A;
+    width: 400px;
+}
+
+.button3:hover {
+    -ms-transform: scale(1.3);
+    transform: scale(1.04);
+}
+
+.fec {
+    position: absolute;
+    top: 1660px;
+    left: 250px;
+}
+
+#rodape {
+    position: absolute;
+    top: 2250px;
+    left: 0px;
+    width: 100%;
+}
+
+.anonimo {
+    position: absolute;
+    font-size: 20px;
+    font-family: Fira Sans;
+    top: 100px;
+    left: 100px;
+}
+
+.anom {
+    position: absolute;
+    top: 185px;
+    left: 655px;
+    font-size: 50px;
+    font-family: 'Fira Sans';
+    color: #99796A;
+}
+
+.titulo {
+    position: absolute;
+    top: 315px;
+    left: 500px;
+}
+
+input[type=text] {
+    padding: 20px;
+    width: 840px;
+    border-radius: 30px;
+    border: none;
+    overflow: hidden;
+    font-size: 30px;
+    background-color: #EBD4C9;
+    color: #B69381;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #B69381;
+}
+
+.desabafe {
+    position: absolute;
+    top: 412px;
+    left: 500px;
+}
+
+textarea {
+    padding: 20px;
+    width: 880px;
+    border-radius: 30px;
+    border: none;
+    font-size: 30px;
+    background-color: #EBD4C9;
+    color: #B69381;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.publicar {
+    position: absolute;
+    top: 835px;
+    left: 505px;
+}
+
+.publicar:hover {
+    -ms-transform: scale(1.3);
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.veroutras {
+    position: absolute;
+    top: 835px;
+    left: 835px;
+}
+
+.veroutras:hover {
+    -ms-transform: scale(1.3);
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 460px;
+    top: 200px;
+    width: 950px;
+    height: 100%;
+    overflow: auto;
+}
+
+.popup-conteudo {
+    background-color: #CDAA99;
+    margin: 15% auto;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+}
+
+button {
+    color: #B69381;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    width: 120px;
+    background-color: #EBD4C9;
+    margin-right: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    -ms-transform: scale(1.3);
+    transform: scale(1.05);
+}
+
+#log1n {
+    position: absolute;
+    width: 00px;
+    margin-left: 40%;
+    margin-top: 85px;
+    background-color: rgb(230, 204, 179);
+}
+
+#ver {
+    width: 200px;
+    margin-right: 40px;
+}
+
+.depressao {
+    position: absolute;
+    top: 218px;
+    left: 0px;
+}
+
+.ansiedade {
+    position: absolute;
+    top: 1288px;
+    left: 0px;
+}
+
+.habitos {
+    position: absolute;
+    top: 218px;
+    left: 0px;
+}
+
+.sobreDep {
+    position: absolute;
+    top: 190px;
+    left: 685px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;
+}
+
+.sobreDep2 {
+    position: absolute;
+    top: 350px;
+    left: 170px;
+    right: 170px;
+    color: white;
+    font-size: 30px;
+}
+
+.sobreDep3 {
+    position: absolute;
+    top: 690px;
+    left: 785px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;
+}
+
+.sobreDep4 {
+    position: absolute;
+    top: 2260px;
+    left: 360px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;
+}
+
+.depressao2 {
+    position: absolute;
+    top: 810px;
+    left: 0px;
+}
+
+.depressao02 {
+    position: absolute;
+    top: 730px;
+    left: 0px;
+}
+
+.depressao3 {
+    position: absolute;
+    top: 2300px;
+    left: 0px;
+}
+
+.sobreansi {
+    position: absolute;
+    top: 780px;
+    left: 675px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;
+}
+
+.sobreansi1 {
+    position: absolute;
+    top: 940px;
+    left: 170px;
+    right: 170px;
+    color: white;
+    font-size: 30px;
+}
+
+.sobreansi2 {
+    position: absolute;
+    top: 630px;
+    left: 485px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;
+}
+
+.sobreansi3 {
+    position: absolute;
+    top: 1030px;
+    left: 285px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;
+}
+
+.provocaansi {
+    position: absolute;
+    top: 180px;
+    left: 550px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;
+}
+
+.ansiconrol{
+    position: absolute;
+    top: 1650px;
+    left: 170px;
+    right: 170px;
+    color: white;
+    font-size: 30px;
+}
+
+
+.butttonansi {
+    position: absolute;
+    top: 1175px;
+    left: 720px;
+    padding: 15px 70px;
+    background-color: #E8C5B4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #99796A;
+    width: 400px;
+}
+
+.sintomas2 {
+    position: absolute;
+    top: 810px;
+    left: 170px;
+    right: 170px;
+    color: white;
+    font-size: 30px;
+}
+
+.sintomas3 {
+    position: absolute;
+    top: 1140px;
+    left: 170px;
+    right: 170px;
+    color: white;
+    font-size: 30px;
+}
+
+.controlaansi{
+    position: absolute;
+    position: absolute;
+    top: 1470px;
+    left: 485px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;
+    
+}
+
+.diagnóstico {
+    position: absolute;
+    top: 2460px;
+    left: 320px;
+    right: 320px;
+    color: white;
+    font-size: 30px;
+}
+
+.butttontdah{
+    position: absolute;
+    top: 1620px;
+    left: 730px;
+    padding: 15px 70px;
+    background-color: #E8C5B4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #99796A;
+    width: 400px;
+}
+
+.buttton {
+    position: absolute;
+    top: 690px;
+    left: 730px;
+    padding: 15px 70px;
+    background-color: #E8C5B4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #99796A;
+    width: 400px;
+}
+
+.buttton:hover {
+    -ms-transform: scale(1.3);
+    transform: scale(1.04);
+}
+
+.buttonsin {
+    position: absolute;
+    top: 2398px;
+    left: 730px;
+    padding: 15px 70px;
+    background-color: #E8C5B4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #99796A;
+    width: 400px;
+}
+
+.buttonsin:hover {
+    -ms-transform: scale(1.3);
+    transform: scale(1.04);
+}
+
+.imgansi {
+    position: absolute;
+    top: 670px;
+    left: 0px;
+}
+
+.imgansi1 {
+    position: absolute;
+    top: 1000px;
+    left: 0px;
+}
+.imgansii{
+    position: absolute;
+    top: 1500px;
+    left: 0px;
+}
+
+.sobretdah{
+    position: absolute;
+    top: 1330px;
+    left: 685px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;
+}
+
+.sobretdah1{
+    position: absolute;
+    top: 1440px;
+    left: 170px;
+    right: 170px;
+    color: white;
+    font-size: 30px;
+}
+
+.causatdah{
+    position: absolute;
+    top: 180px;
+    left: 685px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;   
+}
+
+.sintomastdah{
+    position: absolute;
+    top: 690px;
+    left: 670px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;  
+}
+
+.tratamento{
+    position: absolute;
+    top: 1440px;
+    left: 540px;
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 70px;  
+}
+
+.tratamento2{
+    position: absolute;
+    top: 1550px;
+    left: 170px;
+    right: 170px;
+    color: white;
+    font-size: 30px;
+}
